@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sexxy Mak</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #111; color: #fff; font-family: Arial, sans-serif; }
+
+    header {
+      background: #1a1a1a;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid #e50914;
+    }
+    header h1 { color: #e50914; font-size: 2rem; letter-spacing: 2px; }
+    header nav a {
+      color: #ccc; text-decoration: none; margin-left: 18px; font-size: 0.95rem;
+    }
+    header nav a:hover { color: #e50914; }
+
+    /* Top Ad Banner */
+    .ad-banner {
+      text-align: center;
+      padding: 10px;
+      background: #1a1a1a;
+    }
+    .ad-banner a {
+      display: inline-block;
+      background: #e50914;
+      color: #fff;
+      padding: 10px 30px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .ad-banner a:hover { background: #c0070f; }
+
+    .section-title {
+      padding: 16px 20px 8px;
+      font-size: 1.1rem;
+      color: #e50914;
+      border-left: 4px solid #e50914;
+      margin: 10px 20px 0;
+    }
+
+    /* Video Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      padding: 16px 20px;
+    }
+    @media(max-width: 900px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+    @media(max-width: 500px) { .grid { grid-template-columns: 1fr; } }
+
+    .card {
+      background: #1e1e1e;
+      border-radius: 6px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card:hover { transform: scale(1.03); }
+
+    .thumb {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      background: #2a2a2a;
+      overflow: hidden;
+    }
+    .thumb img {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    /* Placeholder when no image */
+    .thumb .placeholder {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-size: 0.8rem;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .thumb .placeholder span { font-size: 2rem; }
+
+    .badge {
+      position: absolute;
+      top: 6px; right: 6px;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    .duration {
+      position: absolute;
+      bottom: 6px; left: 6px;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      font-size: 0.7rem;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+
+    .card-info { padding: 8px 10px 10px; }
+    .card-info .title { font-size: 0.85rem; font-weight: bold; margin-bottom: 4px; }
+    .card-info .meta { font-size: 0.75rem; color: #888; }
+
+    /* Middle Ad */
+    .ad-mid {
+      text-align: center;
+      padding: 16px 20px;
+      background: #161616;
+      margin: 10px 0;
+    }
+    .ad-mid a {
+      display: inline-block;
+      background: linear-gradient(90deg, #e50914, #ff6b00);
+      color: #fff;
+      padding: 12px 40px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 1.05rem;
+      font-weight: bold;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%,100% { box-shadow: 0 0 0 0 rgba(229,9,20,0.5); }
+      50% { box-shadow: 0 0 0 10px rgba(229,9,20,0); }
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      font-size: 0.8rem;
+      border-top: 1px solid #222;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SEXXY MAK</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Videos</a>
+    <a href="#">Categories</a>
+    <a href="#">Live</a>
+  </nav>
+</header>
+
+<!-- AD SLOT 1 -->
+<div class="ad-banner">
+  <a href="https://auctionr.org/4/4799bc8276085abb58ae23c83fc4a014" target="_blank" rel="noopener">
+    🔥 Watch Premium Videos — Click Here 🔥
+  </a>
+</div>
+
+<div class="section-title">Featured Videos</div>
+
+<!-- 
+  HOW TO ADD YOUR IMAGES:
+  1. Place your thumbnail images inside: c:\SexxyMak\images\
+  2. Name them: thumb1.jpg, thumb2.jpg, ... thumb8.jpg (or .png)
+  3. Replace the src="images/thumb1.jpg" in each card below
+  4. Update the title, views, and duration text as needed
+-->
+<div class="grid">
+
+  <a class="card" href="https://auctionr.org/4/4799bc8276085abb58ae23c83fc4a014" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb1.jpg" alt="Video 1" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb1.jpg</div>
+      <span class="badge">1080p</span>
+      <span class="duration">26 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 1</div>
+      <div class="meta">Channel · 178K Views</div>
+    </div>
+  </a>
+
+  <a class="card" href="https://auctionr.org/4/4799bc8276085abb58ae23c83fc4a014" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb2.jpg" alt="Video 2" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb2.jpg</div>
+      <span class="badge">1080p</span>
+      <span class="duration">41 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 2</div>
+      <div class="meta">Channel · 10.6M Views</div>
+    </div>
+  </a>
+
+  <a class="card" href="https://auctionr.org/4/4799bc8276085abb58ae23c83fc4a014" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb3.jpg" alt="Video 3" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb3.jpg</div>
+      <span class="badge">1440p</span>
+      <span class="duration">25 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 3</div>
+      <div class="meta">Channel · 517K Views</div>
+    </div>
+  </a>
+
+  <a class="card" href="https://auctionr.org/4/4799bc8276085abb58ae23c83fc4a014" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb4.jpg" alt="Video 4" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb4.jpg</div>
+      <span class="badge">1080p</span>
+      <span class="duration">30 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 4</div>
+      <div class="meta">Channel · 177K Views</div>
+    </div>
+  </a>
+
+  <a class="card" href="https://auctionr.org/4/c8f0e696e0e2687122edea923628e1b1" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb5.jpg" alt="Video 5" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb5.jpg</div>
+      <span class="badge">1440p</span>
+      <span class="duration">10 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 5</div>
+      <div class="meta">Channel · 3.7M Views</div>
+    </div>
+  </a>
+
+  <a class="card" href="https://auctionr.org/4/c8f0e696e0e2687122edea923628e1b1" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb6.jpg" alt="Video 6" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb6.jpg</div>
+      <span class="badge">1080p</span>
+      <span class="duration">12 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 6</div>
+      <div class="meta">Channel · 74.8M Views</div>
+    </div>
+  </a>
+
+  <a class="card" href="https://auctionr.org/4/c8f0e696e0e2687122edea923628e1b1" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb7.jpg" alt="Video 7" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb7.jpg</div>
+      <span class="badge">1080p</span>
+      <span class="duration">5 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 7</div>
+      <div class="meta">Channel · 2.9M Views</div>
+    </div>
+  </a>
+
+  <a class="card" href="https://auctionr.org/4/c8f0e696e0e2687122edea923628e1b1" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb8.jpg" alt="Video 8" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb8.jpg</div>
+      <span class="badge">1080p</span>
+      <span class="duration">31 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 8</div>
+      <div class="meta">Channel · 26.3M Views</div>
+    </div>
+  </a>
+
+</div>
+
+<!-- AD SLOT 2 (middle) -->
+<div class="ad-mid">
+  <a href="https://auctionr.org/4/c8f0e696e0e2687122edea923628e1b1" target="_blank" rel="noopener">
+    ▶ Watch More Exclusive Content — Join Now ▶
+  </a>
+</div>
+
+<div class="section-title">More Videos</div>
+
+<div class="grid">
+
+  <a class="card" href="https://auctionr.org/4/4799bc8276085abb58ae23c83fc4a014" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb9.jpg" alt="Video 9" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb9.jpg</div>
+      <span class="badge">1080p</span>
+      <span class="duration">28 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 9</div>
+      <div class="meta">Channel · 36.1M Views</div>
+    </div>
+  </a>
+
+  <a class="card" href="https://auctionr.org/4/4799bc8276085abb58ae23c83fc4a014" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb10.jpg" alt="Video 10" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb10.jpg</div>
+      <span class="badge">1080p</span>
+      <span class="duration">8 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 10</div>
+      <div class="meta">Channel · 1.3M Views</div>
+    </div>
+  </a>
+
+  <a class="card" href="https://auctionr.org/4/4799bc8276085abb58ae23c83fc4a014" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb11.jpg" alt="Video 11" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb11.jpg</div>
+      <span class="badge">AD</span>
+      <span class="duration">Live</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 11</div>
+      <div class="meta">Watch beautiful women online</div>
+    </div>
+  </a>
+
+  <a class="card" href="https://auctionr.org/4/c8f0e696e0e2687122edea923628e1b1" target="_blank" rel="noopener">
+    <div class="thumb">
+      <img src="images/thumb12.jpg" alt="Video 12" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <div class="placeholder" style="display:none"><span>🎬</span>Add thumb12.jpg</div>
+      <span class="badge">1080p</span>
+      <span class="duration">11 min</span>
+    </div>
+    <div class="card-info">
+      <div class="title">Video Title 12</div>
+      <div class="meta">Channel · 3.9M Views</div>
+    </div>
+  </a>
+
+</div>
+
+<footer>
+  &copy; 2025 Sexxy Mak · All Rights Reserved · 18+ Only
+</footer>
+
+</body>
+</html>
